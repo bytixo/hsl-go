@@ -15,6 +15,7 @@ type HashResult []struct {
 }
 
 func TestSolve(t *testing.T) {
+	// result.json contain 5k correct hsl hashe's
 	result, err := os.Open("result.json")
 	if err != nil {
 		panic(err)
